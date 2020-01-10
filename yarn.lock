@@ -3660,10 +3660,10 @@ error-ex@^1.2.0, error-ex@^1.3.1:
   dependencies:
     is-arrayish "^0.2.1"
 
-eruda@^1.10.3:
-  version "1.10.3"
-  resolved "https://registry.yarnpkg.com/eruda/-/eruda-1.10.3.tgz#3a2b065e8006bc84232d2336cd82a192439a0c45"
-  integrity sha512-/kzfl4CTCMS4X7SiN/WkU9FphQvJqWqXTtpyMNKiBBoxjdJTanLItdPTTiXVPmNWTvtn/GvQNBNm037ZUqN0cg==
+eruda@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/eruda/-/eruda-2.0.2.tgz#db5fcefbf8209552adf459022d7651168579ebd2"
+  integrity sha512-kc7ON5TtQNpALBO6EP7VXarxZKZc96KFCtR9sQJey3XwzFoWEGWs8dSoK+FAonsqXnGYU8wnQseC+i/4QTPS9g==
 
 es-abstract@^1.17.0, es-abstract@^1.17.0-next.1:
   version "1.17.0"
