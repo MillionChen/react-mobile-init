@@ -2,18 +2,28 @@
   "name": "loong",
   "version": "1.0.5",
   "description": "react mobile es init",
+  "keywords": [
+    "react"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Jay",
+    "email": "jay.wang.scorpion@gmail.com",
+    "url": "https://scorpionjay.github.io/blog"
+  },
   "scripts": {
-    "start": "npm run dev",
-    "dll": "webpack --config build/webpack.dll.config.js -p --progress --profile",
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --config build/webpack.dev.config.js",
     "build": "npm run build:prod",
-    "build:sit": "cross-env NODE_ENV=production BUILD_ENV=sit webpack --config build/webpack.prod.config.js",
-    "build:uat": "cross-env NODE_ENV=production BUILD_ENV=uat webpack --config build/webpack.prod.config.js",
     "build:pr": "cross-env NODE_ENV=production BUILD_ENV=pr webpack --config build/webpack.prod.config.js",
     "build:prod": "cross-env NODE_ENV=production BUILD_ENV=prod webpack --config build/webpack.prod.config.js",
-    "prettier": "prettier --write  \"./**/*.{js,jsx,css,scss,md,json}\"",
-    "precommit": "lint-staged",
+    "build:sit": "cross-env NODE_ENV=production BUILD_ENV=sit webpack --config build/webpack.prod.config.js",
+    "build:uat": "cross-env NODE_ENV=production BUILD_ENV=uat webpack --config build/webpack.prod.config.js",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --config build/webpack.dev.config.js",
+    "dll": "webpack --config build/webpack.dll.config.js -p --progress --profile",
     "lint": "eslint --fix src",
+    "precommit": "lint-staged",
+    "prettier": "prettier --write  \"./**/*.{js,jsx,css,scss,md,json}\"",
+    "sort": "npx sort-package-json",
+    "start": "npm run dev",
     "test": "npm run lint"
   },
   "lint-staged": {
@@ -23,15 +33,21 @@
       "git add"
     ]
   },
-  "keywords": [
-    "react"
-  ],
-  "author": {
-    "name": "Jay",
-    "email": "jay.wang.scorpion@gmail.com",
-    "url": "https://scorpionjay.github.io/blog"
+  "dependencies": {
+    "@babel/runtime": "^7.7.7",
+    "antd-mobile": "^2.3.1",
+    "axios": "^0.19.0",
+    "core-js": "^3.6.0",
+    "fastclick": "^1.0.6",
+    "moment": "^2.24.0",
+    "rc-form": "^2.4.11",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-redux": "^7.1.3",
+    "react-router-dom": "^5.1.2",
+    "redux": "^4.0.4",
+    "redux-thunk": "^2.3.0"
   },
-  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.7.7",
     "@babel/plugin-proposal-class-properties": "^7.7.4",
@@ -40,6 +56,7 @@
     "@babel/preset-env": "^7.7.7",
     "@babel/preset-react": "^7.7.4",
     "@babel/runtime-corejs3": "^7.7.7",
+    "@types/react": "^16.9.17",
     "add-asset-html-webpack-plugin": "^3.1.3",
     "babel-eslint": "^10.0.3",
     "babel-loader": "^8.0.6",
@@ -82,22 +99,6 @@
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.10.1",
     "webpack-merge": "^4.2.2",
-    "zip-webpack-plugin": "^3.0.0",
-    "@types/react": "^16.9.17"
-  },
-  "dependencies": {
-    "@babel/runtime": "^7.7.7",
-    "antd-mobile": "^2.3.1",
-    "axios": "^0.19.0",
-    "core-js": "^3.6.0",
-    "fastclick": "^1.0.6",
-    "moment": "^2.24.0",
-    "rc-form": "^2.4.11",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-redux": "^7.1.3",
-    "react-router-dom": "^5.1.2",
-    "redux": "^4.0.4",
-    "redux-thunk": "^2.3.0"
+    "zip-webpack-plugin": "^3.0.0"
   }
 }
