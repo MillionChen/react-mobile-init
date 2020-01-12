@@ -84,7 +84,7 @@
     "postcss-preset-env": "^6.7.0",
     "postcss-pxtorem": "^4.0.1",
     "prettier": "1.19.1",
-    "react-hot-loader": "^4.12.18",
+    "react-hot-loader": "4.8",
     "redux-logger": "^3.0.6",
     "rimraf": "^3.0.0",
     "sass": "^1.24.0",
