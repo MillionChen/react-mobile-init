@@ -12,7 +12,7 @@ const TerserPlugin = require("terser-webpack-plugin");
 module.exports = {
   entry: {
     react: ["react", "react-dom", "redux", "react-redux", "redux-thunk", "react-router-dom"],
-    ui: ["antd-mobile/lib/toast", "antd-mobile/lib/button"] // 用到的ant-mobile组件配置在这里
+    ui: ["antd-mobile/lib/toast", "antd-mobile/lib/button"] // ant-mobile components
   },
   output: {
     path: path.join(__dirname, "../dll"),

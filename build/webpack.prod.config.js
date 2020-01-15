@@ -105,11 +105,11 @@ module.exports = merge(common, {
     splitChunks: {
       chunks: "all",
       minChunks: 1,
-      //   minSize: 30000, // 引入模块大于30kb才进行代码分割
-      //   maxSize: 300000, // 引入模块大于300kb时，尝试对引入模块二次拆分引入
+      //   minSize: 30000,
+      //   maxSize: 300000,
       maxInitialRequests: 5,
       automaticNameDelimiter: ".",
-      name: false, // vender 数字命名
+      name: false, // vender
       cacheGroups: {
         // vendor: {
         //   test: /node_modules/,

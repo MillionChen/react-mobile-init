@@ -19,7 +19,7 @@ const theme = require("../config/theme.json");
  * px to rem
  */
 const px2rem = require("postcss-pxtorem")({
-  rootValue: 50, // 需要看根据设计稿计算设置
+  rootValue: 50,
   propList: [
     "font",
     "font-size",
@@ -83,7 +83,7 @@ const cssLoader = [
     test: /\.less|css$/,
     include: [/node_modules/],
     use: [
-      ENV !== "production" // 生产分离出样式
+      ENV !== "production"
         ? {
             loader: "style-loader"
           }
@@ -110,7 +110,7 @@ const cssLoader = [
     ]
   },
   {
-    // 公共样式
+    // common
     test: /\.scss|css$/,
     include: [
       // path.resolve(__dirname, "../", "src/components/"),
@@ -165,7 +165,7 @@ const cssLoader = [
         loader: "css-loader",
         options: {
           modules: {
-            localIdentName: "[local]-[hash:base64:5]" // css模块化
+            localIdentName: "[local]-[hash:base64:5]" // css module
           }
         }
       },
