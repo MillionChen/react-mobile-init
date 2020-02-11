@@ -1,6 +1,7 @@
 {
   "name": "loong",
   "version": "0.1.5",
+  "private": true,
   "description": "react mobile es init",
   "keywords": [
     "react"
