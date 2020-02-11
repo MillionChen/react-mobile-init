@@ -15,10 +15,18 @@ import reactSvg from "@image/react.svg";
 function Login(props) {
   const [redirectToReferrer, setRedirectToReferrer] = useState(false);
 
+  // useEffect(() => {
+  //   const { token } = props;
+  //   token && setRedirectToReferrer(true);
+  // }, [props]);
+
   useEffect(() => {
     const { token } = props;
     token && setRedirectToReferrer(true);
-  }, [props]);
+    return () => {
+      window.scrollTo(0, 0);
+    };
+  }, []);
 
   /**
    * login
