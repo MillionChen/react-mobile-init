@@ -30,4 +30,7 @@ open browser http://ip:9000
 
 ```
 rm -rf .circleci docs CHANGELOG.md docker-compose.yml Dockerfile LICENSE nginx.conf yarn.lock dll node_modules .git
+
+
+
 ```
